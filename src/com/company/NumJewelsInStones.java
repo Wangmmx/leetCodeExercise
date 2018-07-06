@@ -6,6 +6,7 @@ import java.util.List;
 
 public class NumJewelsInStones {
 
+    //Jewels and Stones
     public static void main(String[] args) {
         //给定参数J,S
         String J = "aA";
@@ -21,5 +22,6 @@ public class NumJewelsInStones {
             }
         });
         System.out.println(aaa.size());
+        //输出在S中的且与J中字母相同的个数
     }
 }
