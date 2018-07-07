@@ -6,7 +6,7 @@ import java.util.List;
 
 public class NumJewelsInStones {
 
-    //Jewels and Stones
+    //Jewels and Stones No.771
     public static void main(String[] args) {
         //给定参数J,S
         String J = "aA";

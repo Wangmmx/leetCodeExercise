@@ -7,6 +7,7 @@ import java.util.List;
 
 public class UniqueMorseRepresentations {
 
+    //Unique Morse Code Words No.804
     public static void main(String[] args) {
         String[] words = {"gin", "zen", "gig", "msg"};
         String[] morse = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."};
@@ -40,6 +41,7 @@ public class UniqueMorseRepresentations {
         System.out.println(fr);
         System.out.println(aaaaa);
         System.out.println(aaaaa.size());
+        //输出不相同的单词组成的摩斯码个数
     }
 
 
