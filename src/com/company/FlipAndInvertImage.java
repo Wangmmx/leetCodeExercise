@@ -10,41 +10,25 @@ public class FlipAndInvertImage {
     public static void main(String[] args) {
         int A[][] = {{1,1,0},{1,0,1},{0,0,0}};
        // int[][] A = new int[20][20];
-        List<Integer> eachReverse = new ArrayList<Integer>();
-        List<Integer> eachImage = new ArrayList<Integer>();
-        int[][] reverse = new int[A.length][A[0].length];
-        int[][] image = new int[A.length][A[0].length];
-        int[][] result = new int[A.length][];
-
-        for (int i =0; i<A.length; i++) {
-            int[] each = A[i];
-            for (int j = each.length-1 ;j>=0;j--) {
-                eachReverse.add(each[j]);
-
-
-                reverse[i][j] = each[j];
+        int n = A.length;
+        int m = A[0].length;
+        int temp;
+        for (int i = 0; i<n; i++) {
+            for (int j =0; j<m/2; j++) {
+                temp = A[i][j];
+                A[i][j] = A[i][m-j-1];
+                A[i][m-j-1] = temp;
             }
         }
-
-        for (int i =0; i<A.length; i++) {
-            List each2 = Arrays.asList(eachReverse);
-            for (int j = 0; j < each2.size(); j++) {
-                if (each2.get(j).equals(0)) {
-                    eachImage.add(1);
+        for (int p =0; p<n; p++) {
+            for (int k = 0; k < m; k++) {
+                if (A[p][k] == 1) {
+                    A[p][k] = 0;
                 } else {
-                    eachImage.add(0);
+                    A[p][k] = 1;
                 }
-                //      reverse[i][j] = eachImage[j];
-
-//                for(int n = 0;n<eachImage.size();n++){
-//                    d[i] = eachImage.get(i);
-
             }
-//
-//                result = image[];
-//            }
-//        }
-//        System.out.println(result);
         }
+        System.out.println(A);
     }
 }
