@@ -23,6 +23,7 @@ public class Transpose {
             System.out.println(Arrays.toString(B[k]));
         }
         System.out.println(B);
+        //输出行列变化后的新int[][] B
     }
 
 
