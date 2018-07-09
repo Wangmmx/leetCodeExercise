@@ -5,7 +5,7 @@ import java.util.List;
 
 public class HammingDistance {
 
-    //Flipping an Image No.832
+    //Hamming Distance No.461
     public static void main(String[] args) {
 //        int x;
 //        int y;

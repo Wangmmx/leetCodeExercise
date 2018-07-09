@@ -2,7 +2,7 @@ package com.company;
 
 public class PeakIndexInMountainArray {
 
-    //Flipping an Image No.832
+    //Peak Index in a Mountain Array No.852
     public static void main(String[] args) {
 //        int[] A;
         int[] A = {0,1,0};
