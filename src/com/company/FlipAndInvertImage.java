@@ -13,10 +13,12 @@ public class FlipAndInvertImage {
         int n = A.length;
         int m = A[0].length;
         int temp;
+        //1,2,3,4类似的int[]左右互换内容，不用遍历每个数，只需要到n/2即可
         for (int i = 0; i<n; i++) {
             for (int j =0; j<m/2; j++) {
                 temp = A[i][j];
                 A[i][j] = A[i][m-j-1];
+                //以此为轴两边值互换
                 A[i][m-j-1] = temp;
             }
         }
@@ -30,5 +32,6 @@ public class FlipAndInvertImage {
             }
         }
         System.out.println(A);
+        //输出先前后调换再01互换后的结果
     }
 }
