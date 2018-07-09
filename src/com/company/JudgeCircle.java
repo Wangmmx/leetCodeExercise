@@ -22,6 +22,7 @@ public class JudgeCircle {
                 System.out.println(false);
             }
         }
+        //输出boolean值判断是否能回到原点 直接处理string
     }
 
 
