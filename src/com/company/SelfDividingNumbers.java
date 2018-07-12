@@ -9,34 +9,23 @@ public class SelfDividingNumbers {
     //Judge Route Circle No.657
     public static void main(String[] args) {
 //     int left, int right output: List<Integer>
-        int left = 22;
+        int left = 1;
         int right = 22;
         List<Integer> result = new ArrayList<>();
         for (int i = left; i <= right; i++) {
+            List aa = new ArrayList<>();
             String[] each = ("" + i).split("");
             List<String> list = Arrays.asList(each);
-            System.out.println(list);
-            int finalI =i;
+            int finalI = i;
             list.forEach(s -> {
-                int num = Integer.valueOf(s);
-                if (num!=0) {
-                    if (finalI%num == 0) {
-                        result.add(finalI);
-                    }
+                if (Integer.valueOf(s)!= 0 && finalI%(Integer.valueOf(s)) ==0) {
+                    aa.add(s);
                 }
             });
-//            int finalI = i;
-//            list.forEach(number ->{
-//                int num = Integer.valueOf(number);
-//                while (num!=0) {
-//                    if (finalI %num == 0) {
-//                        result.add(Integer.valueOf(finalI));
-//                    }
-//                }
-//            });
+            if (aa.size() == list.size()) {
+                result.add(i);
+            }
         }
-        System.out.println(result);
-
-
+       System.out.println(result);
     }
 }
