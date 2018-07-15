@@ -6,7 +6,7 @@ import java.util.List;
 
 public class SelfDividingNumbers {
 
-    //Judge Route Circle No.657
+    //Self Dividing Numbers No.728
     public static void main(String[] args) {
 //     int left, int right output: List<Integer>
         int left = 1;

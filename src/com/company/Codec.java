@@ -2,6 +2,7 @@ package com.company;
 
 public class Codec {
 
+    //Encode and Decode TinyURL No.535
 
     // Encodes a URL to a shortened URL.
     public String encode(String longUrl) {
