@@ -1,7 +1,7 @@
 package com.leetCode;
 
 
-public class SortArrayByPartity {
+public class SortArrayByParity {
     //905. Sort Array By Parity
     public static void main(String[] args) {
 //        public int[] sortArrayByParity(int[] A) {
