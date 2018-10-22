@@ -1,11 +1,8 @@
-package com.company;
+package com.leetCode;
 
-import java.util.Arrays;
 
-/**
- * Created by lenovo on 2018/10/10.
- */
 public class SortArrayByPartity {
+    //905. Sort Array By Parity
     public static void main(String[] args) {
 //        public int[] sortArrayByParity(int[] A) {
         int[] A = {3, 1, 2, 4};
@@ -18,7 +15,12 @@ public class SortArrayByPartity {
         for (int i = 0; i < A.length; ++i)
             if (A[i] % 2 == 1)
                 result[m++] = A[i];
+
+//       for (int i = 0; i < result.length; i++) {
+//           System.out.print(result[i]+" ");
+//       }
         System.out.println(result.toString());
+        //根据数组输出数组 要求偶数在前半部分 奇数在后半部分
     }
 }
 

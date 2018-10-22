@@ -1,4 +1,4 @@
-package com.company;
+package com.leetCode;
 
 public class PeakIndexInMountainArray {
 

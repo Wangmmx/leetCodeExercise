@@ -1,8 +1,7 @@
 
-package com.company;
+package com.leetCode;
 
 
-import java.util.Arrays;
 /**
  * Definition for a binary tree node.
  * public class TreeNode {

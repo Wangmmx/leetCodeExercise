@@ -1,7 +1,4 @@
-package com.company;
-
-import java.util.Arrays;
-import java.util.List;
+package com.leetCode;
 
 public class HammingDistance {
 
