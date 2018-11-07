@@ -3,6 +3,7 @@ package com.leetCode;
 
 import java.util.HashSet;
 
+//根据指定的规则来确定唯一的地址 重复的算一个
 public class UniqueEmailAddresses {
     //929. Unique Email Addresses
     public static void main(String[] args) {
@@ -17,5 +18,7 @@ public class UniqueEmailAddresses {
         //System.out.println(uniqueSet);
         System.out.println(uniqueSet.size());
     }
+
+
 }
 
