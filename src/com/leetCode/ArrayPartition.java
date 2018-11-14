@@ -1,10 +1,6 @@
 package com.leetCode;
 
-
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
 public class ArrayPartition {
     //561. Array Partition I
