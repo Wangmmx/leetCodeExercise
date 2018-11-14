@@ -5,11 +5,11 @@ import java.util.Stack;
 //20. Valid Parentheses
 public class No_20 {
     public static void main(String[] args) {
-        System.out.println(Solution.isValid("{[]}"));
+        System.out.println((new Solution()).isValid("{[]}"));
     }
 
     static class Solution {
-        public static boolean isValid(String s) {
+        public  boolean isValid(String s) {
             Stack<Character> stack = new Stack<>();
             for (char i = 0; i < s.length(); i++) {
                 char c = s.charAt(i);
