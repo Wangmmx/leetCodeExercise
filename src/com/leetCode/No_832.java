@@ -1,6 +1,6 @@
 package com.leetCode;
 
-public class FlipAndInvertImage {
+public class No_832 {
 
     //Flipping an Image No.832
     public static void main(String[] args) {

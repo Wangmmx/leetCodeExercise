@@ -1,6 +1,6 @@
 package com.leetCode;
 
-public class HammingDistance {
+public class No_461 {
 
     //Hamming Distance No.461
     public static void main(String[] args) {

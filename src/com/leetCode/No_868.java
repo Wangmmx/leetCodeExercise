@@ -12,17 +12,9 @@ package com.leetCode;
  * }
  */
 
-
-class TreeNode {
-      int val;
-      TreeNode left;
-      TreeNode right;
-      TreeNode(int x) { val = x; }
-  }
-public class MergeTrees {
+public class No_868 {
 
     //Transpose Matrix  No.868
- 
  public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
         if (t1 == null && t2 == null) return null;
         else if (t1 == null) return t2;
@@ -33,7 +25,10 @@ public class MergeTrees {
         return n;
     }
 
-
-
-
+    class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode(int x) { val = x; }
+    }
 }

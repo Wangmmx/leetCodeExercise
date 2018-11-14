@@ -1,6 +1,6 @@
 package com.leetCode;
 
-public class JudgeCircle {
+public class No_657 {
 
     //Judge Route Circle No.657
     public static void main(String[] args) {

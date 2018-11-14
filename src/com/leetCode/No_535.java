@@ -1,6 +1,6 @@
 package com.leetCode;
 
-public class Codec {
+public class No_535 {
 
     //Encode and Decode TinyURL No.535
 
@@ -18,8 +18,8 @@ public class Codec {
     }
 
 
-// Your Codec object will be instantiated and called as such:
-// Codec codec = new Codec();
+// Your No_535 object will be instantiated and called as such:
+// No_535 codec = new No_535();
 // codec.decode(codec.encode(url));
 
 }

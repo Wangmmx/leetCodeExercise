@@ -2,7 +2,7 @@ package com.leetCode;
 
 import java.util.Arrays;
 
-public class ArrayPartition {
+public class No_561 {
     //561. Array Partition I
     //n is 2, and the maximum sum of pairs is 4 = min(1, 2) + min(3, 4).
     public static void main(String[] args) {

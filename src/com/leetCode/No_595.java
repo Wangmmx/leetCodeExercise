@@ -1,7 +1,7 @@
 package com.leetCode;
 
 
-public class BigCountries {
+public class No_595 {
 
     //Big Countries No.595
     public static void main(String[] args) {

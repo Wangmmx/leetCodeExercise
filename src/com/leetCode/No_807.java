@@ -3,7 +3,7 @@ package com.leetCode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MaxIncreaseKeepingSkyline {
+public class No_807 {
 
     //Max Increase to Keep City Skyline No.807
     public static void main(String[] args) {
