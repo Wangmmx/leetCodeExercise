@@ -1,15 +1,13 @@
 package com.leetCode;
 
-import java.util.List;
-
 //203. Remove Linked List Elements
 public class No_203 {
 
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5,6,3,4,2};
-        ListNode arr0 = new ListNode(arr);
-        System.out.println(arr0);
-        System.out.println((new Solution()).removeElements(arr0,3));
+        ListNode node = new ListNode(arr);
+        System.out.println(node);
+        System.out.println((new Solution()).removeElements(node,3));
     }
 
     static class ListNode {
@@ -32,7 +30,7 @@ public class No_203 {
           public String toString() {
               StringBuilder sb = new StringBuilder();
               sb.append("List: ");
-              for (ListNode cur = this; cur.next != null; cur = cur.next) {
+              for (ListNode cur = this; cur != null; cur = cur.next) {
                   sb.append(cur.val + "->");
               }
               sb.append("Null");
