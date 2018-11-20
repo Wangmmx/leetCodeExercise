@@ -28,7 +28,7 @@ public class No_237 {
     }
 
 
-    static class ListNode {
+    private static class ListNode {
         int val;
         ListNode next;
         int num;
