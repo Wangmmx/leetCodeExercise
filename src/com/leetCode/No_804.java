@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class UniqueMorseRepresentations {
+public class No_804 {
 
     //Unique Morse Code Words No.804
     public static void main(String[] args) {
