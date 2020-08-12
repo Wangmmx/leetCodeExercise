@@ -47,7 +47,7 @@ var result = generateTrees(3);
 console.log(result)
 
 
-//todo
+//todo 没写这个
 
 //二叉搜索树（二叉查找树，二叉排序树）
 //每个节点的值唯一，根节点的值大于左子树任一节点的值，小于右子树任一节点的值，左右子树都是二叉搜索树
