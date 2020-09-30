@@ -35,12 +35,6 @@
 // 题目数据保证 horizontalCuts 中的所有元素各不相同
 // 题目数据保证 verticalCuts 中的所有元素各不相同
 
-
-
-//代码
-/**
- * 代码及参数注释
- */
 /**
  * @param {number} h
  * @param {number} w
@@ -49,27 +43,31 @@
  * @return {number}
  */
 var maxArea = function(h, w, horizontalCuts, verticalCuts) {
-    let preH = 0;
-    let preW = 0;
-    horizontalCuts.sort((a, b) => a - b);
-    verticalCuts.sort((a, b) => a - b);
-    horizontalCuts.push(h);
-    verticalCuts.push(w);
+    horizontalCuts.push(0,h);
+    verticalCuts.push(0, w);
 
-    let prefixMaxH = 0;
-    let prefixMaxW = 0;
-    horizontalCuts.forEach(ele => {
-        prefixMaxH = Math.max(prefixMaxH, ele - preH);
-        preH = ele
+    horizontalCuts.sort(function(a, b) {
+        return a - b;
     });
-    verticalCuts.forEach(ele => {
-        prefixMaxW = Math.max(prefixMaxW, ele - preW);
-        preW = ele
+
+    verticalCuts.sort(function(a, b) {
+        return a - b;
     });
-    return prefixMaxH * prefixMaxW;
+    //取面积最大
+    let areaH = 0;
+    let areaW = 0;
+
+    for (let i = 1; i < horizontalCuts.length; i++) {
+        areaH = Math.max(horizontalCuts[i] - horizontalCuts[i - 1], areaH);
+    }
+
+    for (let i = 1; i < verticalCuts.length; i++) {
+        areaW = Math.max(verticalCuts[i] - verticalCuts[i - 1], areaW);
+    }
+    return (areaH * areaW) % (1e9 + 7);
 };
+var result1 = maxArea(50, 15, [37,40,41,30,27,10,31], [2,1,9,5,4,12,6,13,11]);
+console.log(result1);
 
 
 
-var result = maxArea(5, 4,[1,2,4],[1,3]);
-console.log(result);
