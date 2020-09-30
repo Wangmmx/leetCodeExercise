@@ -69,5 +69,46 @@ var maxArea = function(h, w, horizontalCuts, verticalCuts) {
 var result1 = maxArea(50, 15, [37,40,41,30,27,10,31], [2,1,9,5,4,12,6,13,11]);
 console.log(result1);
 
+//代码
+/**
+ * 谁不想吃月饼呢
+ * 王木木夕渣渣写不出来啊
+ */
+/**
+ * @param {number} h
+ * @param {number} w
+ * @param {number[]} horizontalCuts
+ * @param {number[]} verticalCuts
+ * @return {number}
+ */
+var maxAreaMoon = function(h, w, horizontalCuts, verticalCuts) {
+    //放月饼框框
+    horizontalCuts.push(0,h);
+    verticalCuts.push(0, w);
 
+    //给框框和切割线都排序
+    horizontalCuts.sort(function(a, b) {
+        return a - b;
+    });
+
+    verticalCuts.sort(function(a, b) {
+        return a - b;
+    });
+    //取面积最大
+    let moonH = 0;
+    let moonW = 0;
+
+    for (let i = 1; i < horizontalCuts.length; i++) {
+        moonH = Math.max(horizontalCuts[i] - horizontalCuts[i - 1], moonH);
+    }
+
+    for (let i = 1; i < verticalCuts.length; i++) {
+        moonW = Math.max(verticalCuts[i] - verticalCuts[i - 1], moonW);
+    }
+    return moonH * moonW;
+};
+
+// var result = maxAreaMoon(5, 4,[1,2,4],[1,3]);
+var result = maxAreaMoon(50, 15, [37,40,41,30,27,10,31], [2,1,9,5,4,12,6,13,11]);
+console.log(result);
 
