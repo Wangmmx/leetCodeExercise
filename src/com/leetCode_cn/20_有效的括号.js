@@ -3,6 +3,7 @@
  * @return {boolean}
  */
 var isValid = function(s) {
+    if (s.length %2 !== 0) {return false}
     const stack = [];
     for (var i = 0; i< s.length; i++) {
         const c = s[i];
