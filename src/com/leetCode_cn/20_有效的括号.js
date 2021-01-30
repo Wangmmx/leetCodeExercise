@@ -5,21 +5,21 @@
 var isValid = function(s) {
     const stack = [];
     for (var i = 0; i< s.length; i++) {
-        if ( s[i] === '(' || s[i] === '{' || s[i] === '[') {
-            stack.push(s[i])
+        const c = s[i];
+        if ( c === '(' || c === '{' || c === '[') {
+            stack.push(c)
         } else {
-            if (s[i] === ')' && stack[stack.length-1] === '(') {
-                stack.pop()
-            } else if(s[i] === ']' && stack[stack.length-1] === '[') {
-                stack.pop()
-            } else if(s[i] === '}' && stack[stack.length-1] === '{') {
+            const top = stack[stack.length-1];
+            if (c === ')' && top === '(' ||
+                c === ']' && top === '[' ||
+                c === '}' && top === '{'
+            ) {
                 stack.pop()
             } else return false;
         }
     }
-    if(stack.length === 0) {
-        return true
-    } else return false
+
+    return stack.length === 0
 
 };
 
